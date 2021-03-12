@@ -23,16 +23,17 @@
                 <a class="link" href="#/register/Candidate"> Sign up </a>
               </div>
             </div>
-            <div *ngIf="isLoggedIn">
-              <a class="space link" *ngIf="wizardComplete"> Dashboard </a>
-              <a class="space link" *ngIf="wizardComplete"> Interviews </a>
+            <!-- <div>
+              <div *ngIf="wizardComplete">
+                <a class="space link" > Dashboard </a>
+                <a class="space link" > Interviews </a>
+                <a class="space link" > Profile </a>
+              </div>
 
-              <a class="space link" *ngIf="wizardComplete"> Profile </a>
-
-              <div class="sign-up">
+              <div *ngIf="!isLoggedIn" class="sign-up">
                 <a class="link" (click)="logout()" href=""> Log out </a>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="hamburger-menu mobile">

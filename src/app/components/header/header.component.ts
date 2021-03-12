@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  public isLoggedIn = false;
+  @Input() public isLoggedIn: EventEmitter<any> = new EventEmitter();
   public wizardComplete = false;
   // public candidate: Candidate = new Candidate;
   constructor( private router: Router,
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     }
 
   public ngOnInit(): void {
-    console.log('isLoggedIn' , this.isLoggedIn);
+    console.log('###isLoggedIn:::', this.isLoggedIn);
     // this.isLoggedIn = this.authService.isAuthenticated();
     // this.route.params.subscribe(user => {
     //   if(user.Id != undefined){
