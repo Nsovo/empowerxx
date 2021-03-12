@@ -1,0 +1,59 @@
+:host {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+
+    @media screen and (max-width: 1138px) {
+      overflow-x: hidden;
+    }
+
+
+
+  .content {
+    height: 650px;
+    background-color: #80818B;
+    display: flex;
+    margin-top: -1px;
+
+    .white-heading{
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 40%;
+      margin-left: 28%;
+      text-align: center;
+      width: 100%;
+      font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .hr {
+      margin-left: 54%;
+      border: 1px solid #ec70ed;
+      width: 46%;
+    }
+
+    .left-content {
+      flex: 1;
+    }
+
+    .right-content {
+      flex: 1;
+      position: relative;
+      top: 14%;
+    }
+
+    .buttons {
+      margin-left: 56%;
+
+      .hire-button{
+        margin-left: 6px;
+      }
+
+      .buttons-color{
+       background-color: #ec70ed;
+       border: 2px solid #ec70ed;
+       border-radius: 7px;
+       text-transform: uppercase;
+      }
+    }
+  }
+}
