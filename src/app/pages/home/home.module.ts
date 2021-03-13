@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HeaderModule } from 'src/app/components/header/header.module';
+import { PageFooterModule } from 'src/app/components/page-footer/page-footer.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +12,8 @@ import { HeaderModule } from 'src/app/components/header/header.module';
   imports: [
     FormsModule,
     ReactiveFormsModule,
-    NgbModule,
     HeaderModule,
+    PageFooterModule,
     RouterModule.forChild([
       { path: '', component: HomeComponent }])
   ],

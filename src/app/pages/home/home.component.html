@@ -1,5 +1,6 @@
+<app-header [isLoggedIn]="isLoggedIn"> </app-header>
+
 <section>
-  <app-header> </app-header>
   <div class="top-section">
     <div class="content">
       <div class="left-content">
@@ -16,6 +17,178 @@
         <object data="assets/img/homepic-min.png" width="600" height="560"></object>
       </div>
     </div>
-
   </div>
 </section>
+
+<section>
+  <div class="experience">
+    <div class="home">
+      <br/>
+    <div class="heading">
+      <h1>
+        THE EXPERIENCE
+      </h1>
+    </div>
+
+    <div class="exp-content">
+      <div class="profile">
+        <hr class="content-hr" />
+        <div class="number">
+          01.
+        </div>
+
+        <div class="sub-heading">
+          Create a profile
+        </div>
+
+        <div class="description">
+          Your profile acts as your digital CV and contains all the information
+          employers want to know, from skills and experience to expected salary
+          and availability.
+        </div>
+      </div>
+      <div class="jobs">
+        <hr class="content-hr" />
+        <div class="number">
+          02.
+        </div>
+        <div class="sub-heading">
+          Matched Jobs
+        </div>
+        <div class="description">
+          Once your profile is complete. You’ll also see a list of instantly
+          matched jobs that suit your skills and interests. Simply hit the ‘I’m
+          interested’ button on a job to apply!
+        </div>
+      </div>
+      <div class="assessments">
+        <hr class="content-hr" />
+        <div class="number">
+          03.
+        </div>
+        <div class="sub-heading">
+          Complete Assessments
+        </div>
+        <div class="description">
+          Create your 60 seconds video intro and complete a set of assessments to
+          showcase your skills.
+        </div>
+      </div>
+      <div class="hired">
+        <hr class="content-hr" />
+        <div class="number">
+          04.
+        </div>
+        <div class="sub-heading">
+          Get Hired
+        </div>
+        <div class="description">
+          Sit back, relax and watch the best offers come to you.
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="launch">
+    <div class="launch-content">
+    <div class="heading">
+      <h1>
+        LAUNCH YOUR CAREER
+      </h1>
+
+    </div>
+    <hr class="career-hr" />
+    <div class="launch-data">
+    <div class="description">
+      Whether you’re looking for the ultimate dream job, or just a new challenge,
+      you haven’t worked with a recruitment agency like us before. We help women
+      access some of the most sought-after jobs on the market.
+    </div>
+    <div class="buttons launch-button">
+      <button type="button" (click)="open('Candidate')" class="btn btn-primary buttons-color apply-button ">Apply now</button>
+    </div>
+
+  </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="the-team">
+    <div class="home">
+      <br/>
+    <div class="heading">
+      <h1>
+        We’re trusted by brands like these
+      </h1>
+    </div>
+    <hr class="team-hr" />
+
+    <div id="homepage-slider" class="st-slider home-page-slider ">
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked=""/>
+
+      <div class="images">
+         <div class="images-inner">
+          <div class="image-slide">
+            <div class="image bg-yellow">
+              <div class="team-pics">
+                <div class="pic-holder photo-spacer">
+                  <img class="pic-1" src="./assets/img/MultiChoice-logo.jpg" alt="MultiChoice logo" />
+                </div>
+
+                <div  class="pic-holder photo-spacer">
+                  <img class="pic-2" src="./assets/img/Girlcode-logo.jpg" alt="Girl code logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-slide">
+            <div class="team-pics">
+              <div  class="pic-holder photo-spacer">
+                <img class="pic-1" src="./assets/img/MultiChoice-logo.jpg" alt="MultiChoice logo" />
+              </div>
+
+              <div  class="pic-holder photo-spacer">
+                <img class="pic-2" src="./assets/img/Girlcode-logo.jpg" alt="Girl code logo" />
+              </div>
+            </div>
+          </div>
+          <div class="image-slide">
+            <div class="team-pics">
+              <div  class="pic-holder photo-spacer">
+                <img class="pic-1" src="../../../assets/img/MultiChoice-logo.jpg" alt="MultiChoice-logo" />
+              </div>
+
+              <div  class="pic-holder photo-spacer">
+                <img class="pic-2" src="./assets/img/Girlcode-logo.jpg" alt="Girl code logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="labels">
+
+          <div class="fake-radio">
+            <label for="slide1" class="radio-btn"></label>
+            <label for="slide3" class="radio-btn"></label>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="home">
+      <app-page-footer></app-page-footer>
+    </div>
+  </div>
+</footer>
