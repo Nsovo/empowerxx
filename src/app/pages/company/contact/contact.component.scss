@@ -1,0 +1,105 @@
+:host {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+
+.header
+{
+  background-color: #80818B;
+  height: 80px;
+  margin-top: -16px;
+}
+
+::ng-deep .header-right-content{
+  display: none;
+}
+
+
+  ::ng-deep .wrapper{
+    height: auto !important;
+  }
+
+
+  .about-section{
+    background: linear-gradient(1deg, rgba(239, 239, 239, 0.4) 26%, rgb(245, 243, 255) 73%);
+    padding:100px 0;
+}
+.section-title {
+    color: #ed70ed;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 46px;
+	padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.section-description {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.custom-btn-nav{
+    background-image: #ed70ed;
+    box-shadow: 0px 4px 20px 10px rgb(222, 219, 244);
+    font-size: 17px;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 37px;
+    color: #fff;
+}
+.about-text p {
+    line-height: 30px;
+    color: #343333;
+    font-weight: 500;
+    font-size: 17px;
+	margin-bottom: 50px;
+}
+.about_img-inner{
+    margin: 0px 45px;
+}
+.about_img-inner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 47px;
+    opacity: 0.8;
+    transform: rotate(19deg);
+    transform: rotate(-17deg);
+    box-shadow: 4px 6px 38px #ccc;
+    border-radius: 54px;
+    background-color: hsla(0, 0%, 80%, 0.5098039215686274);
+}
+.about_img-inner img {
+    z-index: 99;
+    position: relative;
+    box-shadow: 4px 6px 5px #ccc;
+    border-radius: 54px;
+    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+}
+.about_img-inner:after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    right: 0;
+    top: 25px;
+    bottom: 0;
+    transform: rotate(-15deg);
+    box-shadow: 5px 6px 17px #ccc;
+    border-radius: 54px;
+    background-color: rgba(204, 204, 204, 0.5686274509803921);
+}
+.about_img-inner {
+    position: relative;
+    box-shadow: 4px 6px 35px #ccccccd1;
+    border-radius: 54px;
+    background: rgba(204, 204, 204, 0.4196078431372549);
+}
+.space-60{
+    margin-top:60px;
+}
+}

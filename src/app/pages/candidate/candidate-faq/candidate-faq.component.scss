@@ -1,3 +1,9 @@
+:host {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+
 .header
 {
   background-color: #80818B;
@@ -88,3 +94,4 @@
     ::ng-deep .wrapper{
       height: auto !important;
     }
+  }

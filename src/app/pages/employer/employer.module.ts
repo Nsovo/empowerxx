@@ -4,13 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from 'src/app/components/header/header.module';
 import { PageFooterModule } from 'src/app/components/page-footer/page-footer.module';
-import { CandidateFaqComponent } from './candidate-faq/candidate-faq.component';
-import { CandidateComponent } from './candidate.component';
+import { EmployerComponent } from './employer.component';
+import { EmployerFaqComponent } from './employer-faq/employer-faq.component';
 
 @NgModule({
   declarations: [
-    CandidateComponent,
-    CandidateFaqComponent,
+    EmployerComponent,
+    EmployerFaqComponent
   ],
   imports: [
     FormsModule,
@@ -19,10 +19,9 @@ import { CandidateComponent } from './candidate.component';
     HeaderModule,
     PageFooterModule,
     RouterModule.forChild([
-      { path: '', component: CandidateComponent },
-      { path: '', component: CandidateFaqComponent }])
+      { path: '', component: EmployerComponent }])
   ],
-  exports: [CandidateFaqComponent],
+  exports: [EmployerFaqComponent],
   providers: [],
 })
-export class CandidateModule {}
+export class EmployerModule {}
