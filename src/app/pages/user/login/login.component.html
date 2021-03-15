@@ -1,0 +1,62 @@
+<div class="login-main">
+<div class="login-container">
+<br />
+  <div class="welcome">Sign in to continue</div>
+
+  <div class="login-form">
+    <form [formGroup]="loginForm" class="form" novalidate>
+      <div class="errorMessage">
+        <!-- <alert-cmp></alert-cmp> -->
+      </div>
+      <div class="">
+        <div class="username">
+          <div class="form-group">
+            <input type="email" [ngClass]="emailClass" (change)="validateEmail()"  class="form-control textBox "
+             formControlName="username"  id="username" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <div class="invalid-feedback">
+              Please enter a username.
+            </div>
+
+            <!-- <mat-form-field class="textBox ">
+              <mat-label>Email address</mat-label>
+              <input matInput placeholder="Email" formControlName="username" required>
+              <mat-error *ngIf="hasError('username', 'required')">Email is required</mat-error>
+            </mat-form-field> -->
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="password">
+          <div class="form-group">
+            <input type="password" [ngClass]="passClass" (change)="validatePassword()"  class="form-control textBox" formControlName="password"
+             id="password" aria-describedby="emailHelp" placeholder="Enter password">
+            <div class="invalid-feedback">
+              Please enter a password.
+            </div>
+            <!-- <mat-form-field class="textBox">
+              <mat-label>Password</mat-label>
+              <input matInput  type="password" placeholder="Password" formControlName="password" required>
+              <mat-error *ngIf="hasError('password', 'required')">Password is required</mat-error>
+            </mat-form-field> -->
+          </div>
+        </div>
+    </div>
+    <div class="forgot-password ">
+      <a href="#">Forgot your password?</a>
+    </div>
+    <div class="right-side">
+      <button type="submit" class="btn btn-primary btn-link login-button" ng-submit="login()" (click)="login()">Log In</button>
+  </div>
+    </form>
+  </div>
+
+
+<div class="account">
+  Don't have an account? <a href="#/register/Candidate">Sign up</a>
+</div>
+
+</div>
+</div>
+
+
+

@@ -8,7 +8,7 @@ import { HeaderComponent } from './header.component';
     HeaderComponent,
   ],
   imports: [CommonModule,
-    BrowserModule],
+    ],
   exports: [HeaderComponent],
   providers: [],
 })

@@ -1,14 +1,12 @@
- <div class="header" >
-    <div>
-      <app-header> </app-header>
-    </div>
-</div>
+
 
 <section class="section section--small">
+  <app-header [isLoggedIn]="isLoggedIn"> </app-header>
+
   <div class="container container--small">
-    <h5 center>
+    <h1 center>
         TERMS AND CONDITIONS
-    </h5>
+    </h1>
     <hr>
     <h5>
         About EmpowerXx
@@ -141,8 +139,4 @@
 </section>
 
 
-<div class="footer-main">
-    <div class="home">
     <app-page-footer></app-page-footer>
-    </div>
-  </div>

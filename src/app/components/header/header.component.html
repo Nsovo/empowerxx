@@ -11,11 +11,11 @@
         </div>
         <div class="header-right-content">
           <div class="menu">
-            <div *ngIf="!isLoggedIn">
-              <a class="space link" href="/#/candidatehowitworks">
+            <div *ngIf="!loggedIn"  >
+              <a class="space link" href="candidate">
                 Candidate
               </a>
-              <a class="space link" href="/#/employerhowitworks"> Employer </a>
+              <a class="space link" href="employer"> Employer </a>
 
               <a class="space link" href="/#login"> Sign in </a>
 
@@ -57,7 +57,7 @@
                 <a class="menu__item" href="/#/employerhowitworks">Employer</a>
               </li>
               <li>
-                <a class="menu__item" href="/#/candidatehowitworks"
+                <a class="menu__item" href="/candidate"
                   >Candidate</a
                 >
               </li>

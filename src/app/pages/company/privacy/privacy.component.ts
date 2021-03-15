@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./privacy.component.scss']
 })
 export class PrivacyComponent implements OnInit {
+  public isLoggedIn = false;
 
   constructor() { }
 
   public ngOnInit(): void {
+    console.log('this is privacy');
   }
 
 }

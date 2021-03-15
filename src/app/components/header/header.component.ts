@@ -8,7 +8,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() public isLoggedIn: EventEmitter<any> = new EventEmitter();
+  public loggedIn: boolean;
+  @Input() public set isLoggedIn(code: boolean) {
+    this.loggedIn = code;
+    console.log('###header logged status:::', this.loggedIn);
+  }
   public wizardComplete = false;
   // public candidate: Candidate = new Candidate;
   constructor( private router: Router,
@@ -22,7 +26,6 @@ export class HeaderComponent implements OnInit {
     }
 
   public ngOnInit(): void {
-    console.log('###isLoggedIn:::', this.isLoggedIn);
     // this.isLoggedIn = this.authService.isAuthenticated();
     // this.route.params.subscribe(user => {
     //   if(user.Id != undefined){
