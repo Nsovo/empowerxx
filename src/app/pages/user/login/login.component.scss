@@ -1,14 +1,8 @@
+
 .login-main {
   height: 100vh;
-.header {
-  background-color: #80808b;
-  height: 80px;
-  margin-top: -16px;
+  background-color: #EEF3F6;
 
-  @media only screen and (max-width: 812px) {
-    height: 100px;
-  }
-  }
 
   .sign-up {
     width: 6%;
@@ -24,30 +18,42 @@
 
 .login-container {
   display: block;
-  width: 30%;
-  margin: auto;
+  width: 32%;
   text-align: center;
-  margin-top: 20px;
   background: white;
   border-radius: 7px;
-  margin-bottom: 50px;
-  height: 380px;
+  height: 320px;
+  margin-left: 410px;
+  position: relative;
+  top: 45px;
+
 
   @media only screen and (max-width: 812px) {
     width: 90%;
   }
 
   .welcome{
-    // font-weight: bold;
-    //margin-left: -44px;
-    //margin-top: 15px;
-    font-size: 25px;
-    background-color: #ed70ed;
-    color: #fff;
+    margin-left: -42px;
   }
 
+  .buttons-color {
+    background-color: #ec70ed;
+    border: 2px solid #ec70ed;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 163%;
+  }
+
+  .buttons-color:hover {
+    background-color: #9a139a !important;
+  }
+  .buttons-color:active {
+    background-color: #9a139a !important;
+  }
+
+
   .account {
-    margin-left: -77px;
+    margin-left: -114px;
 
     @media only screen and (max-width: 812px) {
       margin-left: -28px;
@@ -100,6 +106,7 @@
   }
 
   .login-button {
+    border: 1px solid #ed70ed;
     background-color: #ed70ed;
     color: #fff;
     width: 100%;

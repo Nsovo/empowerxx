@@ -16,7 +16,7 @@ import { VoidExpression } from 'typescript';
   encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
-
+  public isLoggedIn = false;
   public emailClass = '';
   public passClass = '';
   loginForm = new FormGroup({
@@ -55,6 +55,9 @@ export class LoginComponent implements OnInit {
     const data = this.loginForm.value;
     const username = this.loginForm.controls.username.value;
     const password = this.loginForm.controls.password.value;
+
+    console.log('Here', data);
+
 
     this.validateEmail();
     this.validatePassword();

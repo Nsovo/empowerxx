@@ -1,13 +1,14 @@
+<app-header [isLoggedIn]="isLoggedIn"> </app-header>
+
 <div class="login-main">
 <div class="login-container">
-<br />
-  <div class="welcome">Sign in to continue</div>
+  <h2 class="welcome">Sign in to continue</h2>
 
   <div class="login-form">
     <form [formGroup]="loginForm" class="form" novalidate>
-      <div class="errorMessage">
-        <!-- <alert-cmp></alert-cmp> -->
-      </div>
+      <!-- <div class="errorMessage">
+         <alert-cmp></alert-cmp> 
+      </div> -->
       <div class="">
         <div class="username">
           <div class="form-group">
@@ -45,18 +46,17 @@
       <a href="#">Forgot your password?</a>
     </div>
     <div class="right-side">
-      <button type="submit" class="btn btn-primary btn-link login-button" ng-submit="login()" (click)="login()">Log In</button>
+      <button type="button" class="btn btn-lg btn-block btn-primary buttons-color"  (click)="login()">Sign In</button>
   </div>
     </form>
   </div>
 
 
-<div class="account">
+<div class="">
   Don't have an account? <a href="#/register/Candidate">Sign up</a>
 </div>
 
 </div>
 </div>
-
 
 
